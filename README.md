@@ -409,11 +409,11 @@ const handleClick = () => {
 ## 3. Tests et Monitoring
 
 16. Quels outils sont recommandés pour tester l'accessibilité dans Next.js ? (plusieurs réponses possibles)
-- [ ] a) Jest avec @testing-library/jest-dom
+- [x] a) Jest avec @testing-library/jest-dom
 - [x] b) Cypress avec cypress-axe
 - [x] c) ESLint avec eslint-plugin-jsx-a11y
 - [x] d) Lighthouse CI
-- [x] e) WAVE
+- [ ] e) WAVE
 - [x] f) Pa11y
 
 17. Quelle est la meilleure pratique pour les tests d'accessibilité automatisés ?
