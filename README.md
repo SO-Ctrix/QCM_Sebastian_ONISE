@@ -123,8 +123,8 @@ const handleClick = () => {
 ```
 8. Quelle est la bonne pratique pour les liens ouvrant dans un nouvel onglet ? (plusieurs réponses possibles)
 - [ ] a) `<a href="url" target="_blank">`
-- [x] b) `<a href="url" target="_blank" rel="noopener noreferrer">`
-- [ ] c) `<a href="url" target="_blank" aria-label="opens in new tab">`
+- [ ] b) `<a href="url" target="_blank" rel="noopener noreferrer">`
+- [x] c) `<a href="url" target="_blank" aria-label="opens in new tab">`
 - [x] d) `<a href="url" target="_blank" rel="noopener noreferrer" aria-label="opens in new tab">`
 
 ### 1.3 Sémantique et Structure
