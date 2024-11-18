@@ -4,15 +4,15 @@
 - Cochez les cases correspondant à vos réponses en remplaçant [ ] par [x]
 - Les questions à choix multiples sont précisées
 - Compléter le document et l'envoyer à l'adresse mail noelie.roux2@eemi.com
-- Prénom Nom : _______________________
+- Prénom Nom : Sebastian ONISE 5A
 
 ## 1. Fondamentaux de l'accessibilité
 
 ### 1.1 Bases HTML et ARIA
 
-1. Quel attribut est essentiel pour rendre une image accessible dans Next.js ?
+1. Quel attribut est essentiel pour rendre une image accessible dans Next.js ? 
 - [ ] a) src
-- [ ] b) alt
+- [x] b) alt
 - [ ] c) title
 - [ ] d) aria-label
 
@@ -23,8 +23,7 @@ export default function Page() {
   return <h1>Mon titre</h1>
 }
 ```
-
-- [ ] b)
+- [x] b)
 ```javascript
 import Head from 'next/head'
 export default function Page() {
@@ -51,21 +50,21 @@ export default function Page() {
 ```
 
 3. Quels éléments HTML5 sont considérés comme des landmarks ? (plusieurs réponses possibles)
-- [ ] a) `<header>`
+- [x] a) `<header>`
 - [ ] b) `<div>`
-- [ ] c) `<nav>`
-- [ ] d) `<main>`
+- [x] c) `<nav>`
+- [x] d) `<main>`
 - [ ] e) `<span>`
-- [ ] f) `<footer>`
+- [x] f) `<footer>`
 
 4. Quel est est la meilleure façon d'afficher un groupe de champs de formulaire liés ?
 - [ ] a) role="group"
 - [ ] b) role="fieldset"
 - [ ] c) role="form"
-- [ ] d) Utiliser la balise `<fieldset>` avec `<legend>`
+- [x] d) Utiliser la balise `<fieldset>` avec `<legend>`
 
 5. Comment indiquer correctement une abréviation accessible ?
-- [ ] a) `<abbr title="World Wide Web">WWW</abbr>`
+- [x] a) `<abbr title="World Wide Web">WWW</abbr>`
 - [ ] b) `<acronym>WWW</acronym>`
 - [ ] c) `<span aria-label="World Wide Web">WWW</span>`
 - [ ] d) `<abbr aria-label="World Wide Web">WWW</abbr>`
@@ -85,7 +84,7 @@ useEffect(() => {
   window.scrollTo(0, 0)
 }, [])
 ```
-- [ ] c)
+- [x] c)
 ```javascript
 useEffect(() => {
   const mainContent = document.getElementById('main-content')
@@ -102,7 +101,7 @@ const handleClick = () => {
 ```
 
 7. Comment implémenter correctement un skip link ?
-- [ ] a)
+- [x] a)
 ```javascript
 <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:top-4">
   Skip to content
@@ -124,9 +123,9 @@ const handleClick = () => {
 ```
 8. Quelle est la bonne pratique pour les liens ouvrant dans un nouvel onglet ? (plusieurs réponses possibles)
 - [ ] a) `<a href="url" target="_blank">`
-- [ ] b) `<a href="url" target="_blank" rel="noopener noreferrer">`
+- [x] b) `<a href="url" target="_blank" rel="noopener noreferrer">`
 - [ ] c) `<a href="url" target="_blank" aria-label="opens in new tab">`
-- [ ] d) `<a href="url" target="_blank" rel="noopener noreferrer" aria-label="opens in new tab">`
+- [x] d) `<a href="url" target="_blank" rel="noopener noreferrer" aria-label="opens in new tab">`
 
 ### 1.3 Sémantique et Structure
 
@@ -149,7 +148,7 @@ const handleClick = () => {
   </div>
 </article>
 ```
-- [ ] c)
+- [x] c)
 ```javascript
 <article>
   <header>
@@ -174,7 +173,7 @@ const handleClick = () => {
 </main>
 ```
 10. Comment structurer correctement les niveaux de titres ?
-- [ ] a) Utiliser h1-h6 dans l'ordre sans sauter de niveau
+- [x] a) Utiliser h1-h6 dans l'ordre sans sauter de niveau
 - [ ] b) Utiliser uniquement h1 et h2 pour plus de simplicité
 - [ ] c) Utiliser les niveaux selon l'importance visuelle
 - [ ] d) Commencer chaque section par un h1
@@ -193,7 +192,7 @@ const handleClick = () => {
   aria-label="Username"
 />
 ```
-- [ ] b)
+- [x] b)
 ```javascript
 <div>
   <label htmlFor="username">Username</label>
@@ -236,7 +235,7 @@ const handleClick = () => {
   </div>
 </div>
 ```
-- [ ] b)
+- [x] b)
 ```javascript
 <div 
   role="dialog"
@@ -258,7 +257,7 @@ const handleClick = () => {
   <button onClick={onClose}>Fermer</button>
 </dialog>
 ```
-- [ ] d)
+- [x] d)
 ```javascript
 <Portal>
   <div
@@ -328,7 +327,7 @@ const handleClick = () => {
   )}
 </div>
 ```
-- [ ] d)
+- [x] d)
 ```javascript
 <nav>
   <button onClick={toggleMenu}>Menu</button>
@@ -356,7 +355,7 @@ const handleClick = () => {
   </div>
 )}
 ```
-- [ ] c)
+- [x] c)
 ```javascript
 {error && (
   <div 
@@ -382,7 +381,7 @@ const handleClick = () => {
 ```javascript
 {isLoading && <div>Loading...</div>}
 ```
-- [ ] b)
+- [x] b)
 ```javascript
 <div 
   role="status"
@@ -411,15 +410,15 @@ const handleClick = () => {
 
 16. Quels outils sont recommandés pour tester l'accessibilité dans Next.js ? (plusieurs réponses possibles)
 - [ ] a) Jest avec @testing-library/jest-dom
-- [ ] b) Cypress avec cypress-axe
-- [ ] c) ESLint avec eslint-plugin-jsx-a11y
-- [ ] d) Lighthouse CI
-- [ ] e) WAVE
-- [ ] f) Pa11y
+- [x] b) Cypress avec cypress-axe
+- [x] c) ESLint avec eslint-plugin-jsx-a11y
+- [x] d) Lighthouse CI
+- [x] e) WAVE
+- [x] f) Pa11y
 
 17. Quelle est la meilleure pratique pour les tests d'accessibilité automatisés ?
 - [ ] a) Tester uniquement avec des lecteurs d'écran
-- [ ] b) Utiliser une combinaison d'outils automatisés et des tests manuels
+- [x] b) Utiliser une combinaison d'outils automatisés et des tests manuels
 - [ ] c) Se fier uniquement aux tests automatisés
 - [ ] d) Tester manuellement avec le clavier
 
@@ -434,7 +433,7 @@ const handleClick = () => {
   }
 }
 ```
-- [ ] b)
+- [x] b)
 ```javascript
 // .github/workflows/a11y.yml
 name: Accessibility Tests
@@ -460,7 +459,7 @@ module.exports = {
   },
 }
 ```
-- [ ] d)
+- [x] d)
 ```javascript
 // cypress/e2e/a11y.cy.js
 describe('Accessibility tests', () => {
@@ -517,7 +516,7 @@ const useFocus = () => {
   }, [router.asPath])
 }
 ```
-- [ ] d)
+- [x] d)
 ```javascript
 function RouteChangeHandler() {
   const { events } = useRouter()
@@ -569,7 +568,7 @@ const Toast = ({ message, type = 'info' }) => (
   </div>
 )
 ```
-- [ ] d)
+- [x] d)
 ```javascript
 const Toast = ({ message, type = 'info', onClose }) => (
   <div 
@@ -621,15 +620,14 @@ Critères d'évaluation :
 ## Bonus
 
 21. Quelles sont les bonnes pratiques pour l'internationalisation accessible ? (plusieurs réponses possibles)
-- [ ] a) Utiliser l'attribut lang sur html
-- [ ] b) Gérer la direction du texte (RTL/LTR)
-- [ ] c) Traduire les attributs aria
+- [x] a) Utiliser l'attribut lang sur html
+- [x] b) Gérer la direction du texte (RTL/LTR)
+- [x] c) Traduire les attributs aria
 - [ ] d) Adapter les landmarks selon la langue
-- [ ] e) Utiliser des polices adaptées à chaque langue
-
+- [x] e) Utiliser des polices adaptées à chaque langue
 22. Comment optimiser les performances tout en maintenant l'accessibilité ? (plusieurs réponses possibles)
-- [ ] a) Lazy loading avec fallback accessible
-- [ ] b) Réduire le JavaScript initial
-- [ ] c) Optimiser les images avec bon alt
+- [x] a) Lazy loading avec fallback accessible
+- [x] b) Réduire le JavaScript initial
+- [x] c) Optimiser les images avec bon alt
 - [ ] d) Mettre en cache les ressources ARIA
-- [ ] e) Utiliser des Service Workers
+- [x] e) Utiliser des Service Workers
